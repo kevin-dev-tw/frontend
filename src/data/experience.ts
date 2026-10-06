@@ -16,6 +16,7 @@ export const experience: Experience[] = [
       '獨立開發並上線 Resumate Partner 履歷編輯器,從需求、UI 設計、前後端到部署一手包辦',
       '設計並交付 DJKridP 官方網站,已由 DJ 本人正式使用,包含 AI 聊天助理與多項 API 整合',
       '獨立開發 AI 即時翻譯網站,串接 Groq LLM 實作 SSE 串流翻譯,並自建輕量 i18n 架構',
+      '獨立開發並部署 CINESPOT PRO 電影探索平台,串接 TMDB API,並完成效能優化(CSS bundle 74KB → 40KB)',
     ],
   },
   {

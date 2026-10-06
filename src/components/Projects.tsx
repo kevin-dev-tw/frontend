@@ -117,7 +117,7 @@ export default function Projects() {
                 </ul>
                 {(p.demo || p.repo) && (
                   <div className="mt-8 flex gap-5 text-sm underline underline-offset-4">
-                    {p.demo && <a href={p.demo} target="_blank" rel="noreferrer" tabIndex={i === idx ? 0 : -1}>Live Demo</a>}
+                    {p.demo && <a href={p.demo} target="_blank" rel="noreferrer" tabIndex={i === idx ? 0 : -1}>Live</a>}
                     {p.repo && <a href={p.repo} target="_blank" rel="noreferrer" tabIndex={i === idx ? 0 : -1}>GitHub</a>}
                   </div>
                 )}

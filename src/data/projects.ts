@@ -11,6 +11,20 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: 'CINESPOT PRO',
+    subtitle: '電影探索平台',
+    summary: '串接 TMDB API 的電影探索平台,提供現正上映、熱門、高分電影瀏覽與即時搜尋,內建電影詳情與預告片播放。',
+    bullets: [
+      '獨立開發並部署 TMDB 電影探索平台,提供現正上映、熱門、高分電影瀏覽與即時片名搜尋,資料依上映日期排序',
+      '實作電影詳情 Modal,整合演職員名單、官方預告片(YouTube embed)與 IMDb / TMDB 外部連結,支援 ESC 關閉與背景滾動鎖定',
+      '效能優化:移除 JS 平滑滾動回歸原生滾動、以 IntersectionObserver 實作 ScrollSpy、卡片 hover 改為純 CSS 消除 re-render、Hero 圖片降載至 w1280,CSS bundle 由 74KB 降至 40KB',
+      '以環境變數管理 TMDB API key 並設計 fallback 資料層,API 異常時維持基本可用性',
+    ],
+    demo: 'https://cinespotpro.vercel.app/',
+    image: 'cinespotpro.png',
+    color: '#221a1e',
+  },
+  {
     title: 'AI 即時翻譯',
     subtitle: '多語言 AI 翻譯工具',
     summary: '支援 80 種語言的即時翻譯網站,透過 SSE 串流逐字輸出譯文,中英雙語介面即時切換。',
