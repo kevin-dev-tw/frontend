@@ -25,21 +25,6 @@ export const projects: Project[] = [
     color: '#e6d5d3',
   },
   {
-    title: 'AI 即時翻譯',
-    subtitle: '多語言 AI 翻譯工具',
-    summary: '支援 80 種語言的即時翻譯網站,透過 SSE 串流逐字輸出譯文,中英雙語介面即時切換。',
-    bullets: [
-      '獨立負責需求、UI 設計、前後端開發到部署,網站已交付並正式上線',
-      '以 Vercel Serverless Function 串接 Groq LLM(SSE 串流回應),實作逐字輸出的即時翻譯體驗,API 金鑰僅存於伺服器端不外洩',
-      '自建輕量 i18n 架構:以 useSyncExternalStore 實作外部狀態儲存,支援中/英即時切換、跨分頁同步與 localStorage 持久化',
-      '不依賴 UI 套件,手刻可搜尋語言下拉選單(80 語言)、Portal 側滑歷史抽屜(含開關動畫)、語言交換與複製功能',
-      '部署期間定位並排除雲端機房 IP 遭上游 API 風控封鎖的問題,調整 Serverless Region 恢復服務',
-    ],
-    demo: 'https://translatepro.vercel.app/',
-    image: 'translatepro.png',
-    color: '#dde5ef',
-  },
-  {
     title: 'Resumate Partner',
     subtitle: '免註冊履歷編輯器',
     summary: '資料只存在你的瀏覽器,不用註冊、不用上傳個資,斷網也能編輯並下載可再編輯的 .docx 履歷。',
