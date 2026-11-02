@@ -6,7 +6,7 @@ import { projects, type Project } from '../data/projects'
 function Preview({ p }: { p: Project }) {
   const host = p.demo ? new URL(p.demo).host : ''
   return (
-    <div className="overflow-hidden rounded-2xl bg-paper shadow-sm ring-1 ring-ink/10">
+    <div className="overflow-hidden rounded-md bg-paper shadow-sm ring-1 ring-ink/10">
       <div className="flex items-center gap-2 border-b border-ink/10 px-4 py-3">
         <span className="h-2.5 w-2.5 rounded-full bg-accent/70" />
         <span className="h-2.5 w-2.5 rounded-full bg-ink/20" />
@@ -63,7 +63,7 @@ export default function Projects() {
 
   return (
     <section id="work" ref={root} className="page-x py-32">
-      <h2 className="mb-16 font-serif text-4xl md:text-6xl">精選作品</h2>
+      <h2 className="mb-16 border-t border-ink/25 pt-6 font-serif text-5xl font-medium md:text-7xl">精選作品</h2>
       <div
         className="work-stage"
         onTouchStart={(e) => { touchX.current = e.touches[0].clientX }}
@@ -74,29 +74,29 @@ export default function Projects() {
             <Arrow
               dir="prev"
               onClick={() => go(idx - 1, -1)}
-              className="pointer-events-auto h-12 w-12 border border-ink/10 bg-paper/70 text-ink shadow-lg shadow-black/20 backdrop-blur-xl hover:bg-ink hover:text-paper"
+              className="pointer-events-auto h-12 w-12 border border-ink/10 bg-paper/70 text-ink shadow-md shadow-ink/10 backdrop-blur-xl hover:bg-ink hover:text-paper"
             />
           </div>
           <div className="pointer-events-none absolute top-1/2 -right-14 z-20 hidden -translate-y-1/2 md:block">
             <Arrow
               dir="next"
               onClick={() => go(idx + 1, 1)}
-              className="pointer-events-auto h-12 w-12 border border-ink/10 bg-paper/70 text-ink shadow-lg shadow-black/20 backdrop-blur-xl hover:bg-ink hover:text-paper"
+              className="pointer-events-auto h-12 w-12 border border-ink/10 bg-paper/70 text-ink shadow-md shadow-ink/10 backdrop-blur-xl hover:bg-ink hover:text-paper"
             />
           </div>
-          <div className="grid overflow-hidden rounded-3xl">
+          <div className="grid overflow-hidden rounded-lg">
           {projects.map((p, i) => (
             <article
               key={p.title}
               aria-hidden={i !== idx}
-              className={`card group col-start-1 row-start-1 grid items-center gap-8 rounded-3xl p-6 duration-500 ease-out md:grid-cols-2 md:gap-14 md:p-12 ${
+              className={`card group col-start-1 row-start-1 grid items-center gap-8 rounded-lg p-6 duration-500 ease-out md:grid-cols-2 md:gap-14 md:p-12 ${
                 i === idx
                   ? 'z-10 translate-x-0 transition-transform'
                   : i === prev
                     ? `pointer-events-none transition-transform ${dir === 1 ? '-translate-x-full' : 'translate-x-full'}`
                     : `pointer-events-none opacity-0 transition-none ${dir === 1 ? 'translate-x-full' : '-translate-x-full'}`
               }`}
-              style={{ background: `${p.color}99` }}
+              style={{ background: p.color }}
             >
               <div>
                 {p.demo ? (
@@ -108,11 +108,11 @@ export default function Projects() {
                 )}
               </div>
               <div>
-                <div className="mb-4 text-sm text-ink/50">0{i + 1}</div>
+                <div className="mb-4 text-sm text-muted">0{i + 1}</div>
                 <h3 className="font-serif text-3xl md:text-4xl">{p.title}</h3>
-                {p.subtitle && <p className="mt-2 text-ink/60">{p.subtitle}</p>}
-                <p className="mt-5 text-lg text-ink/80">{p.summary}</p>
-                <ul className="mt-6 list-disc space-y-2 pl-5 text-sm leading-relaxed text-ink/70 marker:text-ink/40">
+                {p.subtitle && <p className="mt-2 text-ink/75">{p.subtitle}</p>}
+                <p className="mt-5 text-lg text-ink">{p.summary}</p>
+                <ul className="mt-6 list-disc space-y-2 pl-5 text-sm leading-relaxed text-ink/85 marker:text-ink/40">
                   {p.bullets.map((b) => <li key={b}>{b}</li>)}
                 </ul>
                 {(p.demo || p.repo) && (

@@ -17,7 +17,7 @@ export default function Experience() {
 
   return (
     <section id="experience" ref={root} className="page-x py-32">
-      <h2 className="mb-16 font-serif text-4xl md:text-6xl">經歷</h2>
+      <h2 className="mb-16 border-t border-ink/25 pt-6 font-serif text-5xl font-medium md:text-7xl">經歷</h2>
       <div className="border-l border-ink/20 pl-8">
         {experience.map((e) => (
           <article key={e.company} className="exp relative mb-14 max-w-3xl last:mb-0">

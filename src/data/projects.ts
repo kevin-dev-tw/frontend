@@ -22,7 +22,7 @@ export const projects: Project[] = [
     ],
     demo: 'https://cinespotpro.vercel.app/',
     image: 'cinespotpro.png',
-    color: '#221a1e',
+    color: '#e6d5d3',
   },
   {
     title: 'AI 即時翻譯',
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     ],
     demo: 'https://translatepro.vercel.app/',
     image: 'translatepro.png',
-    color: '#1c2b4a',
+    color: '#dde5ef',
   },
   {
     title: 'Resumate Partner',
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     ],
     demo: 'https://resumate-partner.vercel.app/',
     image: 'resumate.png',
-    color: '#1f2d3d',
+    color: '#efdfcf',
   },
   {
     title: 'DJKridP 官方網站',
@@ -65,6 +65,6 @@ export const projects: Project[] = [
     ],
     demo: 'https://djkridp.vercel.app/',
     image: 'djkridp.png',
-    color: '#3a3016',
+    color: '#e8dcb8',
   },
 ]

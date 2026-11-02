@@ -15,7 +15,7 @@ export default function Skills() {
 
   return (
     <section id="skills" ref={root} className="bg-paper-2 page-x py-32">
-      <h2 className="mb-16 font-serif text-4xl md:text-6xl">技能</h2>
+      <h2 className="mb-16 border-t border-ink/25 pt-6 font-serif text-5xl font-medium md:text-7xl">技能</h2>
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         {skills.map((g) => (
           <div key={g.group} className="skill-group">
