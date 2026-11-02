@@ -23,7 +23,7 @@ export default function Experience() {
           <article key={e.company} className="exp relative mb-14 max-w-3xl last:mb-0">
             <span className="absolute top-2 -left-[2.4rem] h-3 w-3 rounded-full bg-accent" />
             <p className="mb-2 text-sm tracking-widest text-accent">{e.period}</p>
-            <h3 className="font-serif text-2xl md:text-3xl">{e.company}</h3>
+            <h3 className="font-serif text-2xl font-medium md:text-3xl">{e.company}</h3>
             <p className="mt-2 text-muted">{[e.role, e.location].filter(Boolean).join(' | ')}</p>
             {e.bullets.length > 0 && (
               <ul className="mt-6 list-disc space-y-3 pl-5 text-ink/80 marker:text-ink/40">

@@ -19,7 +19,7 @@ export default function Skills() {
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         {skills.map((g) => (
           <div key={g.group} className="skill-group">
-            <h3 className="mb-4 text-sm tracking-widest text-muted uppercase">{g.group}</h3>
+            <h3 className="mb-4 text-sm tracking-widest text-muted">{g.group}</h3>
             <ul className="flex flex-wrap gap-3">
               {g.items.map((s) => (
                 <li key={s} className="rounded-full border border-ink/20 px-5 py-2">{s}</li>

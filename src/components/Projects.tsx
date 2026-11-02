@@ -22,7 +22,7 @@ function Preview({ p }: { p: Project }) {
             className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
           />
         ) : (
-          <div className="flex h-full items-center justify-center font-serif text-3xl text-ink/40">{p.title}</div>
+          <div className="flex h-full items-center justify-center font-serif text-3xl font-medium text-ink/40">{p.title}</div>
         )}
       </div>
     </div>
@@ -109,7 +109,7 @@ export default function Projects() {
               </div>
               <div>
                 <div className="mb-4 text-sm text-muted">0{i + 1}</div>
-                <h3 className="font-serif text-3xl md:text-4xl">{p.title}</h3>
+                <h3 className="font-serif text-3xl font-medium md:text-4xl">{p.title}</h3>
                 {p.subtitle && <p className="mt-2 text-ink/75">{p.subtitle}</p>}
                 <p className="mt-5 text-lg text-ink">{p.summary}</p>
                 <ul className="mt-6 list-disc space-y-2 pl-5 text-sm leading-relaxed text-ink/85 marker:text-ink/40">
@@ -137,7 +137,7 @@ export default function Projects() {
               <button
                 key={p.title}
                 onClick={() => go(i, i > idx ? 1 : -1)}
-                aria-label={`第 ${i + 1} 個作品:${p.title}`}
+                aria-label={`第 ${i + 1} 個作品：${p.title}`}
                 aria-current={i === idx ? 'true' : undefined}
                 className={`h-2 rounded-full transition-all duration-300 ${
                   i === idx ? 'w-8 bg-accent' : 'w-2 bg-ink/20 hover:bg-ink/40'

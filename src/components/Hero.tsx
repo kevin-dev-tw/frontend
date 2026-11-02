@@ -26,12 +26,12 @@ export default function Hero() {
       <div aria-hidden className="dot-grid pointer-events-none absolute inset-0" />
       <div aria-hidden className="dot-glow pointer-events-none absolute inset-0" />
       <div className="relative w-full">
-        <h1 className="hero-title font-serif text-6xl leading-[1.2] font-bold tracking-tight sm:text-7xl md:text-[6rem]">
+        <h1 className="hero-title font-serif text-6xl leading-[1.2] font-bold sm:text-7xl md:text-[6rem]">
           從設計<br />到<span className="text-accent">上線</span>
         </h1>
         <div className="hero-meta mt-12 flex flex-col gap-8 border-t border-ink/25 pt-6 md:flex-row md:items-end md:justify-between">
           <p className="max-w-md text-lg leading-relaxed text-muted">
-            <span className="text-ink">Kevin,前端工程師。</span><br />
+            <span className="text-ink">Kevin，前端工程師。</span><br />
             獨立完成需求、設計、前後端與部署
           </p>
           <div className="flex gap-4">

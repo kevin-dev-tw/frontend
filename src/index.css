@@ -28,6 +28,7 @@ body {
   background: var(--color-paper);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  line-break: strict;
 }
 
 .dot-grid {
@@ -64,6 +65,7 @@ body {
 ::selection { background: var(--color-accent); color: var(--color-paper); }
 
 h1, h2, h3 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
 
 @media (prefers-reduced-motion: reduce) {

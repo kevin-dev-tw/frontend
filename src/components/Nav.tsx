@@ -133,7 +133,7 @@ export default function Nav() {
                 href={`#${id}`}
                 onClick={() => go(id)}
                 aria-current={active === id ? 'true' : undefined}
-                className={`menu-item block font-serif text-[clamp(2.75rem,10.5vh,6rem)] leading-[1.15] font-bold tracking-tight transition-opacity duration-300 hover:opacity-100 ${
+                className={`menu-item block font-serif text-[clamp(2.75rem,10.5vh,6rem)] leading-[1.15] font-bold transition-opacity duration-300 hover:opacity-100 ${
                   active === id ? 'underline decoration-2 underline-offset-[0.12em] opacity-100' : 'opacity-85'
                 }`}
               >
