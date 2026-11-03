@@ -11,6 +11,21 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: 'Relay',
+    subtitle: 'the queue that resolves itself',
+    summary: '獨立設計、開發並部署的虛構 AI 客服解決引擎形象網站，整頁構築為一座單色琥珀大廳，以滾動演繹「工單走向解決之光」的概念。',
+    bullets: [
+      '獨立設計、開發並部署 Relay — 虛構 AI 客服解決引擎的形象網站，整頁構築為一座單色琥珀大廳，以滾動演繹「工單走向解決之光」的概念',
+      '以 GSAP 3.15 實作全站動態：ScrollSmoother 驅動 1.4s 慣性滾動與 data-speed 視差、ScrollTrigger scrub 控制太陽隨滾動放大（1→2.7×）、pin 式「一張工單的旅程」於 240% 滾動段中完成原文 → 解析 → 解決三態切換與距離倒數',
+      '自訂設計系統：Anton / Archivo Variable / IBM Plex Mono 自架字體、單色琥珀 token 色彩、剪影 multiply 游標（深色表面自動反轉為日光色）、站牌式導覽（桌面導覽列 / 行動版全螢幕五站選單）',
+      '響應式與無障礙：860px 斷點下太陽收為牆上半圓、遙測欄隱藏、micro 字距縮窄防溢出；完整支援 prefers-reduced-motion（關閉 Smoother、停用霧氣與顆粒動畫、reveal 即現）；設計偵測器掃描零反模式（修復對比、11px 字級下限、nav 選擇器權重 bug）',
+      '工程面：Vite 建置、自架字體免 CDN、Puppeteer 無頭截圖做滾動驗證、vercel.json SPA 部署設定、OG/Twitter 分享卡與 SVG favicon',
+    ],
+    demo: 'https://relay-showcase.vercel.app/',
+    image: 'relay.png',
+    color: '#f2d78e',
+  },
+  {
     title: 'CINESPOT PRO',
     subtitle: '電影探索平台',
     summary: '串接 TMDB API 的電影探索平台，提供現正上映、熱門、高分電影瀏覽與即時搜尋，內建電影詳情與預告片播放。',
